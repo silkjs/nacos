@@ -1,0 +1,28 @@
+{
+  "name": "@silkjs/nacos",
+  "version": "0.0.1",
+  "description": "nacos sdk for browser",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silkjs/nacos.git"
+  },
+  "keywords": [],
+  "authors": [
+    {
+      "name": "dasoncheng",
+      "email": "dasoncheng@outlook.com"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silkjs/nacos/issues"
+  },
+  "homepage": "https://github.com/silkjs/nacos#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}

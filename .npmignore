@@ -1,0 +1,16 @@
+.husky/
+.vscode/
+.coverage/
+docs/
+node_modules/
+src/
+
+.editorconfig
+.eslintignore
+.eslintrc.json
+.lintstagedrc.json
+.prettierignore
+.prettierrc
+tsconfig.build.json
+tsconfig.json
+yarn.lock
