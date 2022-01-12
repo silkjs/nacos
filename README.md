@@ -1,20 +1,20 @@
-# nacos
+# Nacos
 
 nacos sdk for browser
 
-## example
+## Example
 
 ```typescript
 import { Nacos } from "@silkjs/nacos";
 
 const client = new Nacos({
   endpoint: "<endpoint>",
-  namespace: "<namespace>",
   username: "<username>",
   password: "<password>",
 });
-const config = await client.GetConfig<{ uri: { sso: string } }>(
-  "<dataId>",
-  "<group>"
-);
+
+const config = await client.GetConfig<{ uri: { sso: string } }>({
+  dataId: "<dataId>",
+  group: "<group>",
+});
 ```

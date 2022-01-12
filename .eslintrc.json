@@ -8,10 +8,7 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "parser": "@typescript-eslint/parser",
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
@@ -52,7 +49,7 @@
     // Variables
     "init-declarations": ["error"],
     "no-shadow": ["off"],
-    // "no-use-before-define": ["error"],
+    // "no-use-before-define": ["error", { "classes": false }],
 
     // Stylistic Issues
     "array-bracket-spacing": ["error", "never"],
@@ -107,14 +104,13 @@
     "semi-spacing": ["error"],
     "semi-style": ["error", "last"],
     "sort-vars": ["error"],
-    "sort-imports": ["error", { "ignoreDeclarationSort": true }],
     "space-infix-ops": ["error"],
     "spaced-comment": ["error", "always", { "exceptions": ["-", "+"] }],
 
     // ECMAScript 6
     "arrow-parens": ["error", "always"],
     "arrow-spacing": ["error"],
-    "arrow-body-style": ["error", "as-needed"],
+    "arrow-body-style": ["error", "always"],
     "no-duplicate-imports": ["error"],
     "no-useless-constructor": ["error"],
     "no-useless-rename": ["error"],
@@ -126,6 +122,7 @@
     "prefer-spread": ["error"],
     "prefer-template": ["error"],
     "rest-spread-spacing": ["error", "never"],
+    "sort-imports": ["error"],
 
     // plugin
     "@typescript-eslint/no-shadow": ["error"],
